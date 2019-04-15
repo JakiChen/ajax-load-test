@@ -1,26 +1,39 @@
 <!DOCTYPE html>
 <html>
 <head>
-<script	src="https://code.jquery.com/jquery-1.12.4.min.js"
-		integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
-		crossorigin="anonymous">
-</script>
-<script>
-	$(document).ready(function(){
+	<script	src="https://code.jquery.com/jquery-1.12.4.min.js"
+			integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+			crossorigin="anonymous">
+	</script>
+	<script>
+		$(document).ready(function(){
 
-	   $('#content').load("new.html");
 
-	});
-</script>
+			$(".pf-01").click(function(){
+				$('#content').load("works/app-design.html");
+			});
+			$(".pf-02").click(function(){
+				$('#content').load("works/website-design.html");
+			});
+			$(".pf-03").click(function(){
+				$('#content').load("works/branding.html");
+			});
+			$(".pf-04").click(function(){
+				$('#content').load("works/illustration.html");
+			});
+
+		});
+	</script>
 	<style type="text/css">
 		.portfolio-container{
 			position: absolute;
-			width: 100%;
+			width: 50%;
 			height: 100%;
 			top: 0;
-			left: 0;
-			bacgroud-color:#ff3200;
+			right: 0;
+			background-color:#ff3200;
 			overflow: hidden;
+			padding: 20px 0 20px 20px;
 		}
 		#content{
 			overflow:scroll;
@@ -33,5 +46,19 @@
 	<div class="portfolio-container">
 		<div id="content"></div>
 	</div>
+	<ul class="projext-list">
+		<li class="pf-01" deta_link="works/app-design.html">
+			<a href="#">App Design<br><span>UX Design · UI Design · Rapid Protyping</span></a>
+		</li>
+		<li class="pf-02" deta_link="works/website-design.html">
+			<a href="#">WebSite Design<br><span>UI Design · Development </span></a>
+		</li>
+		<li class="pf-03" deta_link="works/branding.html">
+			<a href="#">Branding<br><span>UX Design · UI Design · Rapid Protyping</span></a>
+		</li>
+		<li class="pf-04" deta_link="works/illustration.html">
+			<a href="#">Illustration<br><span>Merchandise · Illustration</span></a>
+		</li>
+	</ul>
 </body>
 </html>
