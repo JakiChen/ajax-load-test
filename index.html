@@ -10,16 +10,16 @@
 
 
 			$(".pf-01").click(function(){
-				$('#content').load("works/app-design.html");
+				$('#content').load($(".pf-01").attr("deta_link"));
 			});
 			$(".pf-02").click(function(){
-				$('#content').load("works/website-design.html");
+				$('#content').load($(".pf-02").attr("deta_link"));
 			});
 			$(".pf-03").click(function(){
-				$('#content').load("works/branding.html");
+				$('#content').load($(".pf-03").attr("deta_link"));
 			});
 			$(".pf-04").click(function(){
-				$('#content').load("works/illustration.html");
+				$('#content').load($(".pf-04").attr("deta_link"));
 			});
 
 		});
@@ -48,7 +48,7 @@
 	</div>
 	<ul class="projext-list">
 		<li class="pf-01" deta_link="works/app-design.html">
-			<a href="#">App Design<br><span>UX Design · UI Design · Rapid Protyping</span></a>
+			<a href="#">App Design<br><span>UX/UI Design · Protyping · Research</span></a>
 		</li>
 		<li class="pf-02" deta_link="works/website-design.html">
 			<a href="#">WebSite Design<br><span>UI Design · Development </span></a>
